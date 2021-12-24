@@ -1,0 +1,64 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  /* min-height: 100vh; */
+  /* justify-content: center;
+  align-items: center; */
+}
+.wrapper {
+  margin: auto;
+  width: 400px;
+  /* border: 3px solid coral; */
+  background-color: black;
+  color: white;
+}
+.screen {
+  text-align: right;
+  font-family: "Courier New", Courier, monospace;
+  padding: 20px 5px;
+  font-size: 40px;
+}
+.row {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  /* border: 2px solid green; */
+  margin-bottom: 2px;
+}
+
+button {
+  border: none;
+  background-color: #d8d9db;
+  color: black;
+  font-size: 40px;
+  height: 100px;
+  flex-basis: 24.5%;
+}
+button:hover {
+  background-color: #ebebeb;
+}
+button:active {
+  background-color: #bbbcbe;
+}
+.double {
+  flex-basis: 49.6%;
+}
+.triple {
+  flex-basis: 74.8%;
+}
+button:last-child {
+  background-color: #df974c;
+  color: white;
+}
+button:last-child:hover {
+  background-color: #dfb07e;
+}
